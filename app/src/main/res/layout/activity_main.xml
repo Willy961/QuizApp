@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- QUESTION 1 -->
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="QUESTION 1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/opcion13"
+                android:layout_margin="20dp"
+                android:text="De las siguientes unidades de medidas de longitud, ¿Cuáles pertenecen al Sistema Inglés?
+Escoja varias opciones."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yarda"/>
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulgada"/>
+                <CheckBox
+                    android:id="@+id/checkBox13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kilómetro"/>
+            </LinearLayout>
+
+
+            <!--QUESTION 2-->
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="QUESTION 2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/opcion13"
+                android:layout_margin="20dp"
+                android:text="Una persona tiene cinco sombreros: 3 negros y 2 blancos.
+Le coloca a tres amigos uno sobre sus cabezas y esconde los dos restantes.
+Los tres amigos no saben de que color es el sombrero que llevan puesto, ni siquiera saben de qué color son los que han sobrado.
+Deben adivinar de que color es el sombrero que llevan puesto. Su única pista es poder ver el color de los sombreros de los otros dos amigos.
+El que ha colocado los sombreros les pregunta a los amigos si saben de que color es el sombrero que llevan puesto.
+- El primero mira el color del sombrero de los otros dos y dice que no puede saber de que color es el suyo.
+- El segundo dice exactamente lo mismo.
+- El tercero ¡¡¡Que es ciego!!! dice que sabe de qué color es el suyo. ¿De qué color es el sombrero del ciego?"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <RadioButton
+                    android:id="@+id/radioButton21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blanco" />
+
+                <RadioButton
+                    android:id="@+id/radioButton22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negro" />
+            </RadioGroup>
+
+            <!--QUESTION 3-->
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="QUESTION 3"/>
+
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="match_parent"
+                android:layout_height="242dp"
+                android:layout_below="@+id/opcion23"
+                android:src="@drawable/problema_matematicas" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <!--QUESTION 4-->
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="QUESTION 4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/opcion13"
+                android:layout_margin="20dp"
+                android:text="Si todas mis corbatas son rojas menos dos, todas son azules menos dos y todas son marrones menos dos, ¿Cuántas corbatas tengo?"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <RadioButton
+                    android:id="@+id/radioButton41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5" />
+
+                <RadioButton
+                    android:id="@+id/radioButton42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/radioButton43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHECK"
+                android:layout_centerInParent="true"
+                android:onClick="Finish"/>
+
+            -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
